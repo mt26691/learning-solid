@@ -27,13 +27,11 @@ namespace SOLID.LiskovSubstitutionPrinciple.RightDesign
     {
         static void Main(string[] args)
         {
-            // staff là một kiểu của employee
-            // do vậy có thể được sử dụng như employee
             IEmployee staff = new Staff();
-
-            // manager cũng là một kiểu của employee
             IEmployee manager = new Manager();
 
+            // staff và manager cùng thuộc một kiểu IEmployee
+            // nên có thể được sử dụng như một IEmployee
             Console.WriteLine("Salary of staff = " + staff.CalculateSalary());
             Console.WriteLine("Salary of manager = " + manager.CalculateSalary());
             Console.ReadLine();
