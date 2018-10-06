@@ -28,8 +28,7 @@ namespace SOLID.LiskovSubstitutionPrinciple.WrongDesign
             rectangle.Width = 10;
 
             // Nếu Square kế thừa từ Rectangle, thì Square phải là một kiểu của Rectangle.
-            // Khi thay thế Rectangle bằng class Square sẽ cho kết quả sai nếu ta muốn tính toán
-            // diên tích hình chữ vuông. 
+            // Khi thay thế Rectangle bằng class Square sẽ cho kết quả sai nếu muốn tính toán diện tích hình vuông.
             // Vì thế Square không thể thay thế Rectangle trong trường hợp này. 
             // Thiết kế này vi phạm nguyên tắc LSP.
             Console.WriteLine("Square = " + rectangle.CalculateSquare());
