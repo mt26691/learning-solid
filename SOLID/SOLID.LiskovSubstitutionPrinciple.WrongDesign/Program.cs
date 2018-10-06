@@ -2,20 +2,6 @@
 
 namespace SOLID.LiskovSubstitutionPrinciple.WrongDesign
 {
-    class Program
-    {
-        static void Main(string[] args)
-        {
-            Rectangle rectangle = new Square();
-            rectangle.Height = 5;
-            rectangle.Width = 10;
-
-            // square không thể thay thế rectangle
-            // do vậy đây là một thiết kế sai
-            Console.WriteLine("Square = "+ rectangle.CalculateSquare());
-            Console.ReadLine();
-        }
-    }
 
     public class Rectangle
     {
@@ -32,4 +18,20 @@ namespace SOLID.LiskovSubstitutionPrinciple.WrongDesign
     {
         public int Side { get; set; }
     }
+
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Rectangle rectangle = new Square();
+            rectangle.Height = 5;
+            rectangle.Width = 10;
+
+            // square không thể thay thế rectangle
+            // do vậy đây là một thiết kế sai
+            Console.WriteLine("Square = " + rectangle.CalculateSquare());
+            Console.ReadLine();
+        }
+    }
+
 }
