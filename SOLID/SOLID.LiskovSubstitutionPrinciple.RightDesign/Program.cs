@@ -37,6 +37,4 @@ namespace SOLID.LiskovSubstitutionPrinciple.RightDesign
             Console.ReadLine();
         }
     }
-
-
 }

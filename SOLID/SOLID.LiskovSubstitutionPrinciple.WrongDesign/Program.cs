@@ -2,7 +2,6 @@
 
 namespace SOLID.LiskovSubstitutionPrinciple.WrongDesign
 {
-
     public class Rectangle
     {
         public int Width { get; set; }
@@ -35,5 +34,4 @@ namespace SOLID.LiskovSubstitutionPrinciple.WrongDesign
             Console.ReadLine();
         }
     }
-
 }
