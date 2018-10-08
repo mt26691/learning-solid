@@ -11,8 +11,7 @@ namespace SOLID.SingleResponsibility
             Console.ReadLine();
         }
     }
-
-
+    
     class FileLogger
     {
         public void Handle(string error)
